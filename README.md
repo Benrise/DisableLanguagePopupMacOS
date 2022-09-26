@@ -21,8 +21,8 @@ By default executable will be installed as `/usr/local/bin/issw`
 
 You can run `issw -l` in terminal to get list of available input sources and modify script above if needed!
 
-Run `issw $available input source from issw -l$` for test.
-For example run: `issw com.apple.keylayout.ABC` | `issw com.apple.keylayout.ABC`
+For simple test run: 
+`issw com.apple.keylayout.ABC` | `issw com.apple.keylayout.Russian`
 
 Watch for the changes in languages. If the languages are switched, the issw installation was successful.
 
