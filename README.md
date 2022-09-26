@@ -67,7 +67,8 @@ Set rights to file:
             `pip install pynput`
             `pip install playsound`
 
-    4.2. Inside `fn.plist` file, change paths to the python executable (if you are using custom python installation) and the script file. Mine is             `/Users/benristar/fn.py`. Paths should be full.
+    4.2. Inside `fn.plist` file, change paths to the python executable (if you are using custom python installation) and the script file.
+    Mine is `/Users/benristar/fn.py`. Paths should be full.
 
     4.3. Copy the plist file to special directory: `cp -R fn.plist ~/Library/LaunchAgents/`.
 
@@ -81,7 +82,7 @@ Set rights to file:
     Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
 <img width="773" alt="image" src="https://user-images.githubusercontent.com/55480132/192275874-40bf787e-1945-49fd-b947-77bd25d3948c.png">
 <img width="777" alt="image" src="https://user-images.githubusercontent.com/55480132/192275926-7bebb75b-446b-44d8-a40a-62598cde8e1d.png">
-
+------------
 
 5. Restart. Log in. It should work.
 
