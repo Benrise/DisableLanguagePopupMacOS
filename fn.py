@@ -10,10 +10,10 @@ def on_press(key):
         stream = os.popen('/usr/local/bin/issw')
         output = stream.read().strip()
         if (output == 'com.apple.keylayout.ABC'):
-            os.system('com.apple.keylayout.Russian')
+            os.system('/usr/local/bin/issw com.apple.keylayout.Russian')
             playsound('/Users/benristar/knopka-klik-zvonkii-myagkaya.wav')
         else:
-            os.system('com.apple.keylayout.ABC')
+            os.system('/usr/local/bin/issw com.apple.keylayout.ABC')
             playsound('/Users/benristar/knopka-klik-zvonkii-myagkaya.wav')
 
 
