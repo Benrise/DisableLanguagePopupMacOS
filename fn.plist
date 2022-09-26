@@ -7,7 +7,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/python3</string>
-        <string>/Users/benristar/fn.py</string>
+        <string>/Users/$USER$/fn.py</string>
     </array>
     <key>KeepAlive</key>
     <true/>
