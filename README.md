@@ -64,7 +64,7 @@ or, if you are using your own python installation:
 5. Mac might ask you to grant permission for python to monitor input from your keyboard and `Accessibility`. Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
 6. Restart. Log in. It should work.
 
-P.S. Don't forget to reinstall `pynput` after upgrades. Also see [issue #2](https://github.com/norflin321/fn-lang-switcher/issues/2).
+P.S. Don't forget to reinstall `pynput` after upgrades.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 # RESULT:
