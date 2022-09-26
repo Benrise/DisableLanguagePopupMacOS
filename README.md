@@ -62,16 +62,25 @@ Set rights to file:
 
 4. Setup auto run of the script every time you log in (python3 should be installed).
 ------------
-4.1. Install `pynput` and `playsound` python module:
-    `/usr/bin/python3 -m pip install pynput`
-        `pip install pynput`
-        `pip install playsound`
-4.2. Inside `fn.plist` file, change paths to the python executable (if you are using custom python installation) and the script file. Mine is `/Users/benristar/fn.py`. Paths should be full.
-4.3. Copy the plist file to special directory: `cp -R fn.plist ~/Library/LaunchAgents/`.
-4.4. Then run this command: `sudo launchctl bootstrap gui/501 ~/Library/LaunchAgents/fn.plist` - it will tell mac to run this file every time you log in. If you want to stop it run `sudo launchctl bootout gui/501 ~/Library/LaunchAgents/fn.plist` and remove the file `rm -rf ~/Library/LaunchAgents/fn.plist`.
-4.5. Mac might ask you to grant permission for python to monitor input from your keyboard and `Accessibility`. Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
-<img width="773" alt="image" src="https://user-images.githubusercontent.com/55480132/192275874-40bf787e-1945-49fd-b947-77bd25d3948c.png">
-<img width="777" alt="image" src="https://user-images.githubusercontent.com/55480132/192275926-7bebb75b-446b-44d8-a40a-62598cde8e1d.png">
+    4.1. Install `pynput` and `playsound` python module:
+        `/usr/bin/python3 -m pip install pynput`
+            `pip install pynput`
+            `pip install playsound`
+
+    4.2. Inside `fn.plist` file, change paths to the python executable (if you are using custom python installation) and the script file. Mine is             `/Users/benristar/fn.py`. Paths should be full.
+
+    4.3. Copy the plist file to special directory: `cp -R fn.plist ~/Library/LaunchAgents/`.
+
+    4.4. Then run this command: `sudo launchctl bootstrap gui/501 ~/Library/LaunchAgents/fn.plist`
+    - it will tell mac to run this file every time you log in. 
+    
+    If you want to stop it run `sudo launchctl bootout gui/501 ~/Library/LaunchAgents/fn.plist`.
+    Also remove the file `rm -rf ~/Library/LaunchAgents/fn.plist`.
+
+    4.5. Mac might ask you to grant permission for python to monitor input from your keyboard and `Accessibility`. 
+    Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
+    <img width="773" alt="image" src="https://user-images.githubusercontent.com/55480132/192275874-40bf787e-1945-49fd-b947-77bd25d3948c.png">
+    <img width="777" alt="image" src="https://user-images.githubusercontent.com/55480132/192275926-7bebb75b-446b-44d8-a40a-62598cde8e1d.png">
 
 
 5. Restart. Log in. It should work.
