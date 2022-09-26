@@ -1,6 +1,6 @@
 # Python script to disable the language switching popup on OS X
 # THE PROBLEM:
-![ezgif-5-86271457e6](https://user-images.githubusercontent.com/33498670/167284292-2fe06593-0e47-4c7e-8086-8abd2237466c.gif)
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/55480132/192276045-1e3c69b9-1188-408a-8e49-08fef5ea8aa6.png">
 
 Not only its slow, but when mouse cursor happens to be in the center of the screen, it selects the wrong language for you!
 
@@ -52,6 +52,7 @@ Set this to "Do Nothing"
 ------------
 ![ezgif-5-aeb126ae5e](https://user-images.githubusercontent.com/33498670/167285047-18f7a509-b56d-4f1f-896a-963c034947dc.jpeg)
 
+
 Setup auto run of the script every time you log in (python3 should be installed).
 ------------
 1. Install `pynput` python module:
@@ -63,6 +64,10 @@ or, if you are using your own python installation:
 3. Copy the plist file to special directory: `cp -R fn.plist ~/Library/LaunchAgents/`.
 4. Then run this command: ` sudo launchctl bootstrap gui/501 ~/Library/LaunchAgents/fn.plist` - it will tell mac to run this file every time you log in. If you want to stop it run ` sudo launchctl bootout gui/501 ~/Library/LaunchAgents/fn.plist` and remove the file `rm -rf ~/Library/LaunchAgents/fn.plist`.
 5. Mac might ask you to grant permission for python to monitor input from your keyboard and `Accessibility`. Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
+<img width="773" alt="image" src="https://user-images.githubusercontent.com/55480132/192275874-40bf787e-1945-49fd-b947-77bd25d3948c.png">
+<img width="777" alt="image" src="https://user-images.githubusercontent.com/55480132/192275926-7bebb75b-446b-44d8-a40a-62598cde8e1d.png">
+
+
 6. Restart. Log in. It should work.
 
 P.S. Don't forget to reinstall `pynput` after upgrades.
