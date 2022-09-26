@@ -27,6 +27,7 @@ For simple test run:
 Watch for the changes in languages. If the languages are switched, the issw installation was successful.
 
 2. Create fn.py file in ~/. Or clone the repository. Add the desired language switching playback sound (optional).
+
 Set rights to file: `chmod u+x fn.py `
 ------------
 
