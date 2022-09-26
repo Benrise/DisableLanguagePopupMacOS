@@ -28,6 +28,7 @@ Watch for the changes in languages. If the languages are switched, the issw inst
 
 2. Create fn.py file in ~/. Or clone the repository. Add the desired language switching playback sound (optional).
 
+    Set rights to file: `chmod u+x fn.py`
 ------------
 
     import os
@@ -53,7 +54,6 @@ Watch for the changes in languages. If the languages are switched, the issw inst
         listener.join()
 
 `<179>` is key code for `fn`.
-Set rights to file: `chmod u+x fn.py`
 
 3. Set this to "Do Nothing"
 ------------
