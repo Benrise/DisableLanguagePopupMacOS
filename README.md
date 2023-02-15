@@ -72,11 +72,11 @@ Watch for the changes in languages. If the languages are switched, the issw inst
 
     4.3. Copy the plist file to special directory: `cp -R fn.plist ~/Library/LaunchAgents/`.
 
-    4.4. Then run this command: `sudo launchctl bootstrap gui/501 ~/Library/LaunchAgents/fn.plist`
+    4.4. Then run this command: `sudo launchctl bootstrap gui/501 /Users/benristar/Library/LaunchAgents/fn.plist`
     - it will tell mac to run this file every time you log in. 
     
-    If you want to stop it run `sudo launchctl bootout gui/501 ~/Library/LaunchAgents/fn.plist`.
-    Also remove the file `rm -rf ~/Library/LaunchAgents/fn.plist`.
+    If you want to stop it run `sudo launchctl bootout gui/501 /Users/benristar/Library/LaunchAgents/fn.plist`.
+    Also remove the file `rm -rf /Users/benristar/Library/LaunchAgents/fn.plist`.
 
     4.5. Mac might ask you to grant permission for python to monitor input from your keyboard and `Accessibility`. 
     Generally macOS asking about `Input Monitoring`, add your python3 executable to `Accessibility` if no popup with this showed.
