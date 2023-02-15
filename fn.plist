@@ -6,10 +6,11 @@
     <string>fn.py</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/python3</string>
-        <string>/Users/$USER$/fn.py</string>
+        <string>/Users/benristar/opt/miniconda3/bin/pip3</string>
+        <string>/Users/benristar/fn.py</string>
     </array>
     <key>KeepAlive</key>
     <true/>
 </dict>
 </plist>
+

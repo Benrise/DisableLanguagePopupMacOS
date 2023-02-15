@@ -11,10 +11,10 @@ def on_press(key):
         output = stream.read().strip()
         if (output == 'com.apple.keylayout.ABC'):
             os.system('/usr/local/bin/issw com.apple.keylayout.Russian')
-            playsound('/Users/#USER#/knopka-klik-zvonkii-myagkaya.wav')
+            playsound('/Users/benristar/knopka-klik-zvonkii-myagkaya.wav')
         else:
             os.system('/usr/local/bin/issw com.apple.keylayout.ABC')
-            playsound('/Users/#USER#/knopka-klik-zvonkii-myagkaya.wav')
+            playsound('/Users/benristar/knopka-klik-zvonkii-myagkaya.wav')
 
 
 with keyboard.Listener(on_press=on_press, on_release=None) as listener:
